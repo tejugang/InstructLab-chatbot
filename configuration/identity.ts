@@ -1,6 +1,8 @@
 export const AI_NAME = "Teju's Assistant";  // The AI's name
 export const OWNER_NAME: string = "Sailakshmi Teja Gangisetty";  // Full name
 export const OWNER_PREFERRED_NAME: string = "Teju";  // Preferred name
+export const OWNER_DESCRIPTION = "Teju is a computer science student with interests in data science, optimization, and machine learning.";
+export const AI_ROLE = "I am an assistant designed to provide support, answer questions, and help with various tasks.";
 export const OWNER_PRONOUNS: string = "She/Her";  // Pronouns
 export const OWNER_LOCATION: string = "Chapel Hill, NC, USA";  // Location
 export const OWNER_LANGUAGES: string = "English, Telugu";  // Primary languages spoken
