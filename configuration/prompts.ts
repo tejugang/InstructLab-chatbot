@@ -58,8 +58,6 @@ export function AI_GOALS_PROMPT() {
   `;
 }
 
-
-
 export function INTENTION_PROMPT() {
   return `
     You are an AI assistant named ${AI_NAME}.
@@ -82,4 +80,3 @@ export function RESPOND_TO_RANDOM_MESSAGE_SYSTEM_PROMPT() {
 }
 
 export { INTENTION_PROMPT, RESPOND_TO_RANDOM_MESSAGE_SYSTEM_PROMPT };
-
