@@ -24,6 +24,9 @@ import {
   OWNER_IMPROVEMENT_AREAS,
 } from "@/configuration/identity";
 
+export const INTENTION_PROMPT = "Please let me know your intention and how I can assist you.";
+export const RESPOND_TO_HOSTILE_MESSAGE_SYSTEM_PROMPT = "Please refrain from using hostile language. Let's keep things respectful and productive.";
+
 export function RESPOND_TO_QUESTION_SYSTEM_PROMPT(context: string) {
   return `
   ${IDENTITY_STATEMENT} ${OWNER_STATEMENT} ${OWNER_DESCRIPTION} ${AI_ROLE}
