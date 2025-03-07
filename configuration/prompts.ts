@@ -2,8 +2,8 @@ import { AI_NAME, OWNER_NAME, OWNER_DESCRIPTION, AI_ROLE, AI_TONE } from "@/conf
 import { Chat, intentionTypeSchema } from "@/types";
 
 const CITATION_FILES = [
-  { id: 1, source: 'Teju Gangisetty, "AI Ethics and Fairness", 2024', file_url: '/citations/citation1.pdf' },
-  { id: 2, source: 'Teju Gangisetty, "Exploring Bias in AI Systems", 2024', file_url: '/citations/citation2.pdf' },
+  { file_url: '/citations/citation1.pdf', source: 'Teju Resume' },
+  { file_url: '/citations/citation2.pdf', source: 'Teju Transcript' },
 ];
 
 const IDENTITY_STATEMENT = `You are an AI assistant named ${AI_NAME}.`;
