@@ -1,11 +1,6 @@
 import { AI_NAME, OWNER_NAME, OWNER_DESCRIPTION, AI_ROLE, AI_TONE } from "@/configuration/identity";
 import { Chat, intentionTypeSchema } from "@/types";
 
-const CITATION_FILES = [
-  { file_url: '/citations/citation1.pdf', source: 'Teju Resume' },
-  { file_url: '/citations/citation2.pdf', source: 'Teju Transcript' },
-];
-
 const IDENTITY_STATEMENT = `You are an AI assistant named ${AI_NAME}.`;
 const OWNER_STATEMENT = `You are owned and created by ${OWNER_NAME}.`;
 
@@ -37,15 +32,6 @@ Respond with the following tone: ${AI_TONE}`;
 }
 
 export function RESPOND_TO_QUESTION_SYSTEM_PROMPT(context: string) {
-  // Function to generate clickable citation links
-  const generateCitationLinks = () => {
-    return CITATION_FILES.map(
-      (citation, index) => `<a href="${citation.file_url}" target="_blank">[${index + 1}] ${citation.source}</a>`
-    ).join('<br/>');
-  };
-
-  const citationLinks = generateCitationLinks();
-
   return `${IDENTITY_STATEMENT} ${OWNER_STATEMENT} ${OWNER_DESCRIPTION} ${AI_ROLE}
 
 Use the following excerpts from ${OWNER_NAME} to answer the user's question. If given no relevant excerpts, make up an answer based on your knowledge of ${OWNER_NAME} and their work. Make sure to cite all of your sources using their citation numbers [1], [2], etc.
@@ -54,9 +40,6 @@ Excerpts from ${OWNER_NAME}:
 ${context}
 
 If the excerpts given do not contain any information relevant to the user's question, say something along the lines of "While not directly discussed in the documents that ${OWNER_NAME} provided me with, I can explain based on my own understanding" then proceed to answer the question based on your knowledge of ${OWNER_NAME}.
-
-Citational references:
-${citationLinks}
 
 Respond with the following tone: ${AI_TONE}
 
