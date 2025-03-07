@@ -29,7 +29,7 @@ export const RESPOND_TO_HOSTILE_MESSAGE_SYSTEM_PROMPT = "Please refrain from usi
 
 export function RESPOND_TO_QUESTION_SYSTEM_PROMPT(context: string) {
   return `
-  ${IDENTITY_STATEMENT} ${OWNER_STATEMENT} ${OWNER_DESCRIPTION} ${AI_ROLE}
+  ${OWNER_DESCRIPTION} ${AI_ROLE}
 
   Use the following excerpts from ${OWNER_NAME} to answer the user's question. If given no relevant excerpts, make up an answer based on your knowledge of ${OWNER_NAME} and her work. Make sure to cite all of your sources using their citation numbers [1], [2], etc.
 
