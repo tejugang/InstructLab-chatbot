@@ -1,3 +1,4 @@
+export const AI_NAME = "Teju's Assistant";  // The AI's name
 export const OWNER_NAME: string = "Sailakshmi Teja Gangisetty";  // Full name
 export const OWNER_PREFERRED_NAME: string = "Teju";  // Preferred name
 export const OWNER_PRONOUNS: string = "She/Her";  // Pronouns
