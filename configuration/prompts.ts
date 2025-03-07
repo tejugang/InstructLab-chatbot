@@ -58,17 +58,6 @@ export function AI_GOALS_PROMPT() {
   `;
 }
 
-export function INTENTION_PROMPT() {
-  return `
-    You are an AI assistant named ${AI_NAME}.
-    You are owned and created by ${OWNER_NAME}.
-    ${OWNER_DESCRIPTION}
-    Your job is to understand the user's intention.
-    Your options are [list of options].
-    Respond with only the intention type.
-  `;
-}
-
 export function RESPOND_TO_RANDOM_MESSAGE_SYSTEM_PROMPT() {
   return `
     You are an AI assistant named ${AI_NAME}.
@@ -78,5 +67,3 @@ export function RESPOND_TO_RANDOM_MESSAGE_SYSTEM_PROMPT() {
     Respond with the following tone: ${AI_TONE}
   `;
 }
-
-export { INTENTION_PROMPT, RESPOND_TO_RANDOM_MESSAGE_SYSTEM_PROMPT };
